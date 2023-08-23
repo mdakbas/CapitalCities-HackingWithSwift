@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		FD17E20C2A9627610010BC06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD17E20B2A9627610010BC06 /* AppDelegate.swift */; };
 		FD17E20E2A9627610010BC06 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD17E20D2A9627610010BC06 /* SceneDelegate.swift */; };
-		FD17E2102A9627610010BC06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD17E20F2A9627610010BC06 /* ViewController.swift */; };
-		FD17E2132A9627610010BC06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD17E2112A9627610010BC06 /* Main.storyboard */; };
 		FD17E2152A9627620010BC06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD17E2142A9627620010BC06 /* Assets.xcassets */; };
-		FD17E2182A9627620010BC06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD17E2162A9627620010BC06 /* LaunchScreen.storyboard */; };
+		FD17E2222A9627EC0010BC06 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD17E2212A9627EC0010BC06 /* HomeVC.swift */; };
+		FD17E2242A9627FA0010BC06 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD17E2232A9627FA0010BC06 /* HomeViewModel.swift */; };
+		FD17E2262A9628020010BC06 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD17E2252A9628020010BC06 /* Home.storyboard */; };
+		FD17E2282A9628D90010BC06 /* MapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD17E2272A9628D90010BC06 /* MapModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FD17E2082A9627610010BC06 /* CapitalCities-HackingWithSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CapitalCities-HackingWithSwift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD17E20B2A9627610010BC06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD17E20D2A9627610010BC06 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FD17E20F2A9627610010BC06 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FD17E2122A9627610010BC06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FD17E2142A9627620010BC06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FD17E2172A9627620010BC06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD17E2192A9627620010BC06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD17E2212A9627EC0010BC06 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		FD17E2232A9627FA0010BC06 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		FD17E2252A9628020010BC06 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		FD17E2272A9628D90010BC06 /* MapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,32 @@
 		FD17E20A2A9627610010BC06 /* CapitalCities-HackingWithSwift */ = {
 			isa = PBXGroup;
 			children = (
+				FD17E2202A9627DA0010BC06 /* HomeVC */,
+				FD17E21F2A9627D40010BC06 /* Model */,
 				FD17E20B2A9627610010BC06 /* AppDelegate.swift */,
 				FD17E20D2A9627610010BC06 /* SceneDelegate.swift */,
-				FD17E20F2A9627610010BC06 /* ViewController.swift */,
-				FD17E2112A9627610010BC06 /* Main.storyboard */,
 				FD17E2142A9627620010BC06 /* Assets.xcassets */,
-				FD17E2162A9627620010BC06 /* LaunchScreen.storyboard */,
 				FD17E2192A9627620010BC06 /* Info.plist */,
 			);
 			path = "CapitalCities-HackingWithSwift";
+			sourceTree = "<group>";
+		};
+		FD17E21F2A9627D40010BC06 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FD17E2272A9628D90010BC06 /* MapModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FD17E2202A9627DA0010BC06 /* HomeVC */ = {
+			isa = PBXGroup;
+			children = (
+				FD17E2212A9627EC0010BC06 /* HomeVC.swift */,
+				FD17E2232A9627FA0010BC06 /* HomeViewModel.swift */,
+				FD17E2252A9628020010BC06 /* Home.storyboard */,
+			);
+			path = HomeVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +144,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD17E2182A9627620010BC06 /* LaunchScreen.storyboard in Resources */,
 				FD17E2152A9627620010BC06 /* Assets.xcassets in Resources */,
-				FD17E2132A9627610010BC06 /* Main.storyboard in Resources */,
+				FD17E2262A9628020010BC06 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,32 +156,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD17E2102A9627610010BC06 /* ViewController.swift in Sources */,
+				FD17E2222A9627EC0010BC06 /* HomeVC.swift in Sources */,
+				FD17E2282A9628D90010BC06 /* MapModel.swift in Sources */,
 				FD17E20C2A9627610010BC06 /* AppDelegate.swift in Sources */,
 				FD17E20E2A9627610010BC06 /* SceneDelegate.swift in Sources */,
+				FD17E2242A9627FA0010BC06 /* HomeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		FD17E2112A9627610010BC06 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FD17E2122A9627610010BC06 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		FD17E2162A9627620010BC06 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FD17E2172A9627620010BC06 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		FD17E21A2A9627620010BC06 /* Debug */ = {
@@ -292,7 +293,6 @@
 				INFOPLIST_FILE = "CapitalCities-HackingWithSwift/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +320,6 @@
 				INFOPLIST_FILE = "CapitalCities-HackingWithSwift/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
